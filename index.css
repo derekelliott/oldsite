@@ -9,8 +9,13 @@ div.fixed {
 div.mainlogo {
   text-indent: 20px;
   margin: 0px;
-  height: 200px;
   color: white;
+}
+
+div.header {
+  margin-left: 420px;
+  margin-top: 80px;
+  color: gray;
 }
 
 ul {
@@ -19,7 +24,7 @@ ul {
   list-style-type: none;
   font-size: 30px;
   padding: 0px;
-  margin: 0px;
+  margin-top: 80px;
 }
 
 li a {
@@ -40,10 +45,22 @@ a.link:hover {
   background-color: white;
 }
 
+a.linkhome {
+  color: white;
+  text-decoration: none;
+}
+
+a.onpage {
+  color: black;
+  background-color: white;
+}
+
+
+
 h1 {
   font-family: 'Roboto', sans-serif;
-  padding: 0px;
-  margin: 0px;
+  margin-top: 80px;
+  margin-bottom: 0px;
   font-size: 80px;
 }
 
@@ -73,14 +90,21 @@ h2.foottext {
   left: 0px;
 }
 img {
-    width: 100%;
+    margin-left: 300px;
     height: auto;
 }
 
 img.feature {
-  margin-left: 300px;
   margin-top: 0px;
   width: 70%;
   float: left;
   padding: 0px;
+}
+
+img.about {
+  margin-left: 420px;
+  height: 70%;
+
+
+
 }
