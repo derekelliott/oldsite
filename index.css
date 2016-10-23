@@ -1,110 +1,259 @@
-div.fixed {
-  position: fixed;
-  top: 0%;
-  left: 0%;
-  height: 100%;
-  background-color: black;
+html, body {
+    height: 100%;
+    background-color: #eee;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.87);
 }
 
-div.mainlogo {
-  text-indent: 20px;
-  margin: 0px;
-  color: white;
+@media only screen and (max-width: 1199px) {
+body {font-size: 9px;
 }
-
-div.header {
-  margin-left: 420px;
-  margin-top: 80px;
-  color: gray;
 }
-
-ul {
-  text-indent: 20px;
+@media only screen and (min-width: 1200px) {
+  body {font-size: 16px;
+}
+}
+/***TYPE***/
+p {
   font-family: 'Roboto', sans-serif;
-  list-style-type: none;
-  font-size: 30px;
-  padding: 0px;
-  margin-top: 80px;
+  font-size: 1.25em;
+  line-height: 1.25em;
+  font-weight: 500;
+  font-style: italic;
 }
-
-li a {
-  display: block;
-  width: 300px;
-  height: 40px;
-  text-decoration: none;
-  padding: 0px;
-  margin: 0px;
-}
-
-a.link {
-  color: white;
-}
-
-a.link:hover {
-  color: black;
-  background-color: white;
-}
-
-a.linkhome {
-  color: white;
-  text-decoration: none;
-}
-
-a.onpage {
-  color: black;
-  background-color: white;
-}
-
-
 
 h1 {
   font-family: 'Roboto', sans-serif;
-  margin-top: 80px;
-  margin-bottom: 0px;
-  font-size: 80px;
+  font-weight: 900;
 }
 
 h2 {
-  padding: 0px;
-  margin: 0px;
-  font-size: 18px;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  line-height: 1em;
+  font-weight: 500;
+  font-style: italic;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.25em;
+  line-height: 1.25em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.center {
+  text-align: center;
+}
+
+/*** MENU STUFF***/
+
+#mainmenu {
+  position: fixed;
+  left: 2em;
+  top: 0;
+  bottom: 0;
+  width: 22em;
+  text-align: center;
+  z-index: 3;
+}
+
+h1.derrk {
+  margin-bottom: 0;
+  font-size: 6em;
+
+}
+
+div.mainlogo {
+  margin-top: 5em;
+}
+
+div.content {
+  position: absolute;
+  float: left;
+  left: 26em;
+  right: 0;
+  top: 0;
 }
 
 div.menufoot {
-  padding: 0px;
-  text-indent: 20px;
-  margin: 0px;
-  background-color: #ea6045;
-  min-width: 300px;
-  height: 20px;
-  color: black;
-  position: fixed;
-  bottom: 0%;
+  position: absolute;
+  width: 20em;
+  color: rgba(0, 0, 0, 0.38);
+  bottom: 0;
 }
 
-h2.foottext {
-  font-size: 12px;
+/***WORK PAGE ***/
+
+img.bigfat {
+  width: 100%;
+  height: auto;
+
+}
+
+div.projectbg {
+  border-top: 2px solid #fff;
+  position: static;
+  overflow: hidden;
+  max-width: 80em;
+  margin: 4em;
+  height: 18.75em;
+  background-color: #fafafa;
+  box-shadow: 0 1em 1em #ddd;
+}
+
+div.projecttextbox {
+  display: block;
+  overflow: hidden;
+  padding-left: 4em;
+  padding-right: 4em;
+}
+
+h1.projtitle {
+  font-size: 4em;
+  margin-top: 1.5em;
+  margin-bottom: 0;
+}
+
+a.project {
+  opacity: 1;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+a.project:hover {
+  opacity: .5;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+img.projectcoverimg {
   position: relative;
-  bottom: 0px;
-  left: 0px;
-}
-img {
-    margin-left: 300px;
-    height: auto;
-}
-
-img.feature {
-  margin-top: 0px;
-  width: 70%;
   float: left;
-  padding: 0px;
+  height: 100%;
+  width: auto;
+  margin-left: 0;
 }
 
-img.about {
-  margin-left: 420px;
-  height: 70%;
+/***MENU LIST***/
+
+ul {
+  font-family: 'Roboto', sans-serif;
+  list-style-type: none;
+  padding: 0;
+  left: 0;
+  font-size: 2em;
+  margin-top: 2em;
+}
+
+li a {
+  line-height: 2em;
+  display: block;
+  height: 2em;
+  text-decoration: none;
+}
+
+a.link {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+a.onpage {
+  color: rgba(0, 0, 0, 0.87);
+  border-top: 2px solid #fff;
+  background-color: #fafafa;
+  box-shadow: 0 .5em 1em #ddd;
+}
+
+a.link:hover {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #fafafa;
+  box-shadow: 0 .5em 1em #ddd;
+}
+
+a.linkhome {
+  color: rgba(0, 0, 0, 0.87);
+  text-decoration: none;
+}
 
 
+/***END MENU LIST***/
+
+
+
+/***PROJECT PAGE***/
+
+h1.title {
+font-size: 4em;
+margin-top: 0;
+}
+
+h1.header {
+  font-size: 2em;
+}
+
+
+
+div.projectpagetitle {
+background-color: #212121;
+width: auto;
+overflow: hidden;
+}
+
+div.projcontent {
+}
+
+img.projectpageimg {
+width: 100%;
+height: auto;
+overflow: hidden;
+}
+
+
+div.projectpagetitletext {
+  padding: 8em 4em;
+}
+
+.whitebg {
+  text-align: left;
+  padding: 4em;
+  width: auto;
+  margin-top: 0;
+background-color: #fafafa;
+overflow: hidden;
+}
+
+.white {
+    color: white;
+}
+
+
+
+/**ABOUT PAGE SPECIFIC**/
+
+
+div.abtpagetitle {
+background-color: #212121;
+width: 100%;
+overflow: hidden;
+position: relative;
 
 }
+
+img.abtpgimg {
+height: 30em;
+  float: left;
+  margin-left: 0;
+  margin-right: 4em;
+}
+
+div.abtpgtext {
+padding-top: 4em;
+  margin: 4em;
+}
+
+p.larger {
+  font-size: 2em;
+}
+
+/** CONTACT PAGE SPECIFIC**/
